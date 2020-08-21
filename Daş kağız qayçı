@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="az">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+  <title>Daş, Kağız, Qayçı</title> 
+ </head> 
+ <body>
+ <style>
+ *{
+     outline:0; 					-webkit-tap-highlight-color:transparent;
+ 				}
+ #sec{
+ 				position :absolute ;
+ 				top :25%;
+ 				left :10%;
+ 				height :300px;
+ 				width :150px;
+ 				font-size :30px;
+ 		  color: #001fcd;
+ 		  
+ 		  text-align :center ;
+ 		  font-family: 'Milonga', cursive;
+ 		  font-size :30px;
+ 		
+ 		  text-shadow: 1px 1px 3px #000000 ;
+ 				}
+ #komp{
+ 				position :absolute ;
+ 				top :25%;
+ 				right :10%;
+ 				height :300px;
+ 				width :150px;
+ 				font-family: 'Russo One', sans-serif;
+ 		  font-size :30px;
+ 		  color: #ff2e2e;
+ 		  text-align :center ;
+ 		  text-shadow: 1px 1px 3px #000000 ;
+ 
+ 
+ 				}
+	#das{
+ 								position :relative;
+ 								width :100%;
+ 								height :100%;
+ 								
+ 								}
+ 	#dasbtn{
+ 								position :absolute ;
+ 								top :10px;
+ 								width :50px;
+ 								height :50px;
+ 								left :23%;
+ 								}
+ #kagiz{
+ 				   position :relative;
+ 								width :100%;
+ 								height :100%;
+ 				}
+ #kagizbtn{
+ 				   position :absolute ;
+ 								top :12px;
+ 								width :60px;
+ 								height :50px;
+ 								left :38%;
+ 				}
+ 
+ #qayci{
+ 			    	position :relative ;
+ 								width :100%;
+ 								height :100%;
+ 				}
+ #qaycibtn{
+ 			    	position :absolute ;
+ 								top :10px;
+ 								width :50px;
+ 								height :50px;
+ 								left :57%;
+ 				}
+
+ table{
+ 				height :75px;
+ 				width : 315px;
+ 				position :absolute ;
+ 				left:10%;
+ 				top :70%;
+ 				}
+ button{
+ 				border-radius :50%;
+ 				transition: transform .1s;
+ 				border:0;
+ 				background:0;
+ 				}
+ button :active {
+				
+				transform: scale(0.7);
+				
+				}
+	.esas{
+					position :absolute ;
+					top:33%;
+					height :100px;
+					width :100px;
+					
+					right :10px;
+					}
+	#sensec{
+					right :10px;
+					}
+	#andsec{
+					right:30px;
+					}
+	p{
+					position :absolute ;
+					top: 75%;
+					left: 27%;
+					font-family: 'Milonga', cursive;
+					font-size :40px;
+					}
+#xal1{
+				position :absolute ;
+				top :40px;
+				font-family: 'Milonga', cursive;
+				font-size:30px ;
+				}
+#xal{
+				position :absolute ;
+				top :40px;
+				left:100px;
+				font-family: 'Milonga', cursive;
+				font-size:30px ;
+				} 
+ </style>
+ <script>
+ 
+ var a;
+ var b;
+ var c=0;
+ 
+ 
+ 
+ 
+ 
+ function das() {document.getElementById("sensec").src="https://i.imgur.com/b9hkxqi.png";
+ a=1;
+ }
+ 
+ 
+ 
+ 
+ function kagiz(){	document.getElementById("sensec").src="https://i.imgur.com/IXdanGl.png";
+ a=2;
+}
+ 
+ 
+ 
+ 								
+ function qayci(){	document.getElementById("sensec").src="https://i.imgur.com/VHUkxAs.png";
+ a=3;
+}
+ 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+						
+ function emel(){
+ 				
+ 					var android=	Math.random()*3;
+						android=Math.floor(android)+1;
+     
+ 				if(android==1){
+ 								document.getElementById("andsec").src="https://i.imgur.com/Mdn8Ue2.png"
+ 								b=1;
+ 								}
+ 							
+
+else 	if(android==2){
+ 								document.getElementById("andsec").src="https://i.imgur.com/TsB9ipJ.png"
+ 								b=2;
+ 								} 
+ 				else if(android==3){
+ 								document.getElementById("andsec").src="https://i.imgur.com/wBMK0iX.png"
+ 								b=3;
+ 								}
+ 								
+ 								
+ 								
+ 				}
+ 
+ 	function netice(){
+ 					
+if(a==1)
+{
+				if(b==1){
+				alert("HEÇ-HEÇƏ !!!");
+				}
+				else 	if(b==2){
+				alert("MƏĞLUB OLDUN ! ");
+				}
+				else 	if(b==3){
+				alert("QALİB GƏLDİN ! 🎉🎉🎉");
+				c=c+1;
+				}
+				}
+	 					
+else if(a==2)
+{
+				if(b==1){
+				alert("QALİB GƏLDİN ! 🎉🎉🎉");
+					c=c+1;
+				
+				}
+				else 	if(b==2){
+				alert("HEÇ-HEÇƏ !!!");
+				}
+				else 	if(b==3){
+				alert("MƏĞLUB OLDUN ! ");
+				}
+}
+else if(a==3)
+{
+				if(b==1){
+				alert("MƏĞLUB OLDUN ! ");
+				}
+				else 	if(b==2){
+				alert("QALİB GƏLDİN ! 🎉🎉🎉");
+					c=c+1;
+				
+				}
+				else 	if(b==3){
+				alert("HEÇ-HEÇƏ !!!");
+				}}
+document.getElementById("xal").innerHTML=c;
+ 					}
+ 					
+ </script>
+ 
+ <div id="sec"><b>SƏN</b><img class="esas" id="sensec" src="https://i.imgur.com/b9hkxqi.png"></div>
+ <div id="komp">ANDROID<img id="andsec"class="esas" src="https://i.imgur.com/Mdn8Ue2.png"></div>
+ 
+ 
+<span id="xal1"><b>XAL :   </b></span><span id="xal"> 0 </span>
+ 
+<table>
+<p>Seçiminiz </p>
+<tr>
+
+<td><button id="dasbtn" onclick="emel();das();netice()"><img id="das" src="https://i.imgur.com/b9hkxqi.png"</button></td>
+<td><button id="kagizbtn" onclick="emel();kagiz();netice()"><img id="kagiz" src="https://i.imgur.com/IXdanGl.png"</button></td>
+<td><button id="qaycibtn" onclick="emel();qayci();netice()"><img id="qayci" src="https://i.imgur.com/VHUkxAs.png"</button></td>
+ </tr>
+ </table>
+ 
+ </body></html>
